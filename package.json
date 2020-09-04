@@ -1,0 +1,31 @@
+{
+  "name": "wordpress.wasiak.biz",
+  "version": "1.0.0",
+  "description": "Oferta WordPress",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dirs": "mkdir -p js && mkdir -p css && mkdir -p css/images",
+    "build": "npm run dirs && npm run bulma && npm run leaflet",
+    "bulma": "cp node_modules/bulma/css/bulma.min.css css/",
+    "leaflet": "cp node_modules/leaflet/dist/leaflet.css css/ && cp node_modules/leaflet/dist/images/* css/images/ && cp node_modules/leaflet/dist/leaflet.js js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwasiak/wordpress.wasiak.biz.git"
+  },
+  "keywords": [
+    "wasiak",
+    "wordpress"
+  ],
+  "author": "Jarosław Wasiak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwasiak/wordpress.wasiak.biz/issues"
+  },
+  "homepage": "https://github.com/jwasiak/wordpress.wasiak.biz#readme",
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "leaflet": "^1.7.1"
+  }
+}
