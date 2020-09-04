@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WordPress Developer Krosno</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <link rel="icon" sizes="128x128" href="img/favicon.icns">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+  </head>
+  <body class="has-navbar-fixed-top">
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" style="font-family: Sarina;font-size: 2rem;">
+                J.Wasiak
+            </a>
+
+               
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+
+            <a class="navbar-item" href="#home">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="#oferta">
+              Oferta
+            </a>
+
+            <a class="navbar-item" href="#kontakt">
+                Kontakt
+              </a>
+      
+          </div>
+      
+        </div>
+      </nav>
+
+
+
+
+      <section id="home" class="hero is-light is-medium">
+        <div class="hero-body">
+          <div class="container">
+            <h1  class="title">
+              Specjalista WordPress
+            </h1>
+            <h2 class="subtitle">
+              wsparcie developerskie dla firm
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero is-large" style="background-image: url(img/wasiak-background.jpg);background-position: center; background-size: cover;">
+        <div class="hero-body"></div>  
+        </section>
+
+
+        <section id="oferta" class="hero is-light is-medium">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  Oferta
+                </h1>
+              </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Strony internetowe</p>
+                    <p class="content">Nie wiesz jak się do tego zabrać? Nie masz czasu na na naukę i eksperymenty? Zrobię to za Ciebie. Szybko i w konkurencyjnych cenach. </p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Szablony i wtyczki WP</p>
+                    <p class="content">Chcesz aby Twój WordPress wyglądał oryginalnie? Potrzebujesz dodatkowej funkcjonalności na stronie? Zapytaj co mogę Ci zaproponować.</p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Sklepy internetowe</p>
+                    <div class="content">
+                      <p>Dzisiaj sprzedaż przez Internet jest czymś zupełnie naturalnym. Zwiększ obroty swojego sklepu stacjonarnego otwierając się na nowych klientów.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+    
+              <div class="tile is-ancestor">
+                <div class="tile is-8 is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Dedykowane aplikacje webowe</p>
+                    <p class="content">A może potrzebujesz czegoś wyjątkowego? Aplikacji obsługiwanej przez przeglądarkę internetową do której będą mieli dostęp nie tylko Twoi klienci ale również pracownicy. Realizującej funkcje specyficzne dla Twojego biznesu. Dającej Ci przewagę nad konkurencją. To prawdopodobnie da się zrobić. Porozmawiajmy o tym.</p>
+                  </article>
+                </div>
+              </div>
+
+        </section>
+
+
+      <section class="hero is-light is-medium">
+        <div class="hero-body">
+          <div class="container">
+            <h1 id="kontakt" class="title">
+              Kontakt
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+
+        <div class="columns">
+            <div class="column" style="padding: 5rem;">
+              <p>
+                  <strong>Jarosław Wasiak</strong> <br>
+                  tel. 13 431 47 93 <br>
+                  38-400 Krosno, ul. Oficerska 7/14 <br>
+                  e-mail: <a href="mailto:www@wasiak.biz">www@wasiak.biz</a>
+              </p>
+            </div>
+            <div class="column">
+                <div id="mapid" style="height: 500px;"></div>
+            </div>
+          </div>
+
+      </section>
+
+
+
+     
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            &copy; 2020 Jarosław Wasiak
+          </p>
+        </div>
+      </footer>
+
+      
+
+
+      <script>
+          
+
+    var mymap = L.map('mapid').setView([49.684818, 21.772627], 17);
+    var marker = L.marker([49.684818, 21.772627]).addTo(mymap);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 20,
+    // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    //     '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    //     'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1
+}).addTo(mymap);
+marker.bindPopup("<b>WordPress Developer</b><br>Krosno, Oficerska 7/14").openPopup();
+
+
+      </script>
+
+  </body>
+</html>
